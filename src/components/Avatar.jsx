@@ -3,8 +3,8 @@ import "./Avatar.css";
 
 function Avatar(props) {
   return (
-    <div className="card">
-      <img src={props.image.push("Bob")} alt="avatar" />
+    <div className={props.cls + " card"}>
+      <img src={props.image} alt="avatar" />
       <h2>
         {props.lastName} {props.firstName}
       </h2>
@@ -16,6 +16,7 @@ Avatar.propTypes = {
   image: PropTypes.string.isRequired,
   firstName: PropTypes.string.isRequired,
   lastName: PropTypes.string.isRequired,
+  cls: PropTypes.string.isRequired,
 };
 
 export default Avatar;
