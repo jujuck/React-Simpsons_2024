@@ -1,6 +1,7 @@
 import "./Avatar.css";
 
-function Avatar() {
+function Avatar(props) {
+  console.log(props);
   return (
     <div className="card">
       <img
