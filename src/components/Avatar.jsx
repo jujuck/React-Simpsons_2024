@@ -1,14 +1,12 @@
 import "./Avatar.css";
 
 function Avatar(props) {
-  console.log(props);
   return (
     <div className="card">
-      <img
-        src="https://www.stickees.com/files/cartoon/the-simpsons/2239-bart-simpson-.png"
-        alt="avatar"
-      />
-      <h2>Nom Prénom</h2>
+      <img src={props.image} alt="avatar" />
+      <h2>
+        {props.lastName} {props.firstName}
+      </h2>
     </div>
   );
 }
